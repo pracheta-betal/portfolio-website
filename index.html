@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family:'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            text-decoration: none;
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+            color:aliceblue
+
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+
+        }
+         ul a{
+            text-decoration: none;
+            color: white;
+        }
+         ul a:hover{
+            color:aquamarine;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 1px;
+            align-items: center;
+        }
+        .firstsection>div{
+            width: 30%;
+            margin: 20px;
+        }
+        .leftsection{
+            font-size:  2.3rem;
+
+        }
+        .rightsection img{
+            width: 100%;
+        }
+        #element{
+            color:aquamarine;
+            font-weight: 600;
+            font-size: 2.3rem;
+        }
+        .secondsection{
+            max-width: 80%;
+            margin:auto
+        }
+        main hr{
+            border: 30px;;
+            height: 1.2px;
+            background:rgb(174, 13, 110);
+            margin: 60px 84px;
+            opacity: 100%;
+    
+        }
+        #about{
+            padding: 80px ;
+        }
+        .row{
+            display: flex;
+            text-wrap:wrap;
+            justify-content: space-between;
+        }
+        .about-col-1{
+            flex-basis: 35%;
+        }
+        .about-col-2{
+            flex-basis: 60%;
+        }
+        .subtitle{
+            font-size: 40px;
+        }
+        .tab-titles{
+            display: flex;
+            margin: 20px 0 40px;
+        }
+        .tab-links{
+            margin-right: 40px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position:relative;
+        }
+        .tab-links::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: rgb(208, 10, 49);
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .tab-links.active-link::after{
+            width: 100%;
+        }
+        .tab-contents ul li{
+            margin-bottom: 10px 0;
+            list-style: none;
+        }
+        .tab-contents ul li span{
+            font-size: 14px;
+            color:rgba(243, 2, 2, 0.985);
+        }
+        .tab-contents{
+            display: none;
+        }
+        .tab-contents.active-tab{
+            display: block;
+        }
+        .subtitle{
+            font-size: 2.5rem;
+            margin:50px 50px;
+        }
+        #Services{
+            padding: 30px 0;
+            margin:50px 50px;
+        }
+        .service-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap: 30px;
+            margin-top: 50px;
+        }
+        .service-list div{
+            background: rgb(61, 35, 52);
+            padding: 40px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 300;
+            margin: 50px 20px;
+        }
+        .service-list div h2{
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: inline;
+        }
+        .service-list div:hover{
+            background:rgb(3, 114, 120);
+            color: white;
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+        #Portfolio{
+            padding: 30px 0;
+        }
+        .Work-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap: 30px;
+            margin-top: 50px;
+        }
+        .work{
+            
+            padding: 20px;
+            border-radius: 10px;
+            position: relative ;
+            overflow: hidden;   
+        }
+        .work img{
+            border-radius: 10px;
+            display: block ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class ="left">My Portfolio</div>
+            <div class ="right"></div>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>      
+                <a href="#"><li>Services</li></a>
+                <a href="#"><li>Projects</li></a>
+                <a href="#"><li>Contact me</li></a>
+            </ul>
+        </nav>
+    </header>   
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hello, I am <span style="color:rgba(255, 0, 34, 0.868) ;">Pracheta.</span><br></div>
+                <div>I am a  passionate </div>
+                <div id="element"></div>
+            </div>
+            <div class="rightsection">
+            <img src="porfolio.png" alt="">   
+            </div>
+        </section>
+        <hr>
+        <div id="about" >
+            <div class="container">
+                <div class="row">
+                        <div class="about-col-1">
+                            <img src="port.png.png"alt="",size="400px" width="400px",padding="20px 20px">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="subtitle">About me</h1>
+                            <p>
+                                I am Prcheta Betal,a web developer,grphics designer and I am currently studying Engineering . I love to design and make new things that can be useful to others.
+                                Althouth I am an ECE enginner but I am very passionate about website development.
+                                Pproficiency in languages like Javascript,Python,C and a frontend developer.
+                                My ability  is to create responsive, intuitive, and visually appealing user interfaces using HTML, CSS, and modern CSS frameworks.
+                                I also know UI-UX designing using Figma.
+                                My goal is to make many different,websites and AI to help the growing processs of technology.</p>
+                            <div class="tab-titles">
+                            <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('Educatiion')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab"id="skills">
+                                <ul>
+                                    <li><span>UI-UX</span><br>Designing web/app interfaces</li>
+                                     <li><span>Web Developement</span><br>Web App Developement</li>
+                                    <li><span>App Developement</span><br>Building Android/iOS Apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents"id="Experience">
+                                <ul>
+                                    <li><span>2024-SIH Hackathon</span><br>participate as a student</li>
+                                     <li><span>Syntaxical 2.0</span><br>a college competition finalist among 430 teams</li>
+                                    <li><span>Certified Python learner</span><br>completed a course and get the certificate afer qualifying examination</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents"id="Educatiion">
+                                <ul>
+                                    <li><span>2022</span><br>Higher Secondary</li>
+                                     <li><span>2020</span><br>Secondary with 95%</li>
+                                    <li><span>2024</span><br>Batchelor of Technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="'Services">
+                <div class="container">
+                    <h1 class="subtitle"> My  Services</h1>
+                    <div class="service-list"> 
+                        <div>
+                            <h2>Web Development</h2>
+                            <p>Creating responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div>
+                            <h2>Graphics Design</h2>
+                            <p>Designing visually appealing graphics for websites, social media, and marketing materials.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div>
+                            <i class="fas fa-app-store"></i>
+                            <h2>UI/UX Design</h2>
+                            <p>Designing intuitive and engaging user interfaces for web and mobile applications.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="Work-list">
+                <div class="work">
+                    <img src="img1.png" alt="",size="200px" width="400px",padding="20px 20px">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img2.png" alt="",size="200px" width="400px">
+            </div>
+            <div class="work">
+                <img src="img3.png" alt="",size="200px" width="400px">
+            </div>
+            </div>
+        </div>
+    </div>
+            
+    </main> 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphics Designer', 'Web Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+</html>
